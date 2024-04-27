@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "203662772768",
+    "project_id": "holafirebase-26aba",
+    "storage_bucket": "holafirebase-26aba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203662772768:android:619a4460d95216472b0a45",
+        "android_client_info": {
+          "package_name": "com.example.hola_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3jpCBWzHwoFnXLwFEMINbLpdcOpPq5P4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
