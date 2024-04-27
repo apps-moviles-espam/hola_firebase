@@ -72,7 +72,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 onPressed: () {
                   createFirebaseAccount(email: usuario, password: contrasena);
                 },
-                child: const Text("Crear usuario en Firebase"))
+                child: const Text("Crear usuario en Firebase")),
+            TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const SignInScreen();
+                  }));
+                },
+                child: const Text("Iniciar Sesión en Firebase"))
           ],
         ),
       ),

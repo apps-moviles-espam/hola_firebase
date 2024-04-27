@@ -28,10 +28,12 @@ class _SignInScreenState extends State<SignInScreen> {
         password: password,
       );
 
-      print(credential.user!.uid.toString());
+      //print(credential.user!.uid.toString());
 
       Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return const HomeScreen();
+        return HomeScreen(
+          usuario: credential.user!.uid.toString(),
+        );
       }));
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
