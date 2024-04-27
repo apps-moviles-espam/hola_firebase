@@ -31,9 +31,10 @@ class _SignInScreenState extends State<SignInScreen> {
       //print(credential.user!.uid.toString());
 
       Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return HomeScreen(
-          usuario: credential.user!.uid.toString(),
-        );
+        // return HomeScreen(
+        //   usuario: credential.user!.uid.toString(),
+        // );
+        return HomeScreen();
       }));
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
